@@ -1,5 +1,3 @@
-package TriResultsJava.tests;//package TriResultsJava.tests;
-
 import TriResultsJava.Column;
 import TriResultsJava.ColumnsConfigParser;
 import org.junit.jupiter.api.AfterEach;

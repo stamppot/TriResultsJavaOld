@@ -20,7 +20,7 @@ import java.util.List;
 
 public class ColumnsConfigParser {
 
-    public List<Column> parse(String filename) throws IOException {
+    public List<TriResultsJava.Column> parse(String filename) throws IOException {
 
         String content = new String(Files.readAllBytes(Paths.get(filename)));
 
@@ -47,8 +47,8 @@ public class ColumnsConfigParser {
 //        Validator validator = schema.newValidator();
 //        validator.validate(new DOMSource(document));
 
-        List<Column> columns = new ArrayList<Column>();
-        Column column = null;
+        List<TriResultsJava.Column> columns = new ArrayList<TriResultsJava.Column>();
+        TriResultsJava.Column column = null;
 
         document.getDocumentElement().normalize();
         NodeList nList = document.getElementsByTagName("column");
@@ -63,10 +63,10 @@ public class ColumnsConfigParser {
                 Integer order = Integer.parseInt(eElement.getAttribute("order"));
 
 
-                Element mapFromNode = XMLUtils.getChild(eElement, "mapfrom");
-                List<String> altNames = XMLUtils.extractTextChildren(mapFromNode, "altname");
+                Element mapFromNode = TriResultsJava.XMLUtils.getChild(eElement, "mapfrom");
+                List<String> altNames = TriResultsJava.XMLUtils.extractTextChildren(mapFromNode, "altname");
 
-                column = new Column(name, order, altNames);
+                column = new TriResultsJava.Column(name, order, altNames);
                 columns.add(column);
             }
         }
