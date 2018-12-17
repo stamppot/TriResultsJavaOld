@@ -1,5 +1,3 @@
-package TriResultsJava;
-
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
@@ -13,14 +11,16 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 //import TriResultsJava.Config;
 
 
 public class ColumnsConfigParser {
 
-    public List<TriResultsJava.Column> parse(String filename) throws IOException {
+    public List<TriResultsJava.Column> parse(String filename) throws IOException, BadConfigurationException {
 
         String content = new String(Files.readAllBytes(Paths.get(filename)));
 
@@ -68,6 +68,16 @@ public class ColumnsConfigParser {
 
                 column = new TriResultsJava.Column(name, order, altNames);
                 columns.add(column);
+            }
+        }
+
+        // check duplicates
+        Map<String,String> checkAltNames = new HashMap<String, String>();
+        for (TriResultsJava.Column col : columns) {
+            for (String alternativeName : col.AlternativeNames()) {
+                if (checkAltNames.containsKey(alternativeName)) {
+                    throw new BadConfigurationException("Duplicate column name in configuration: " + alternativeName);
+                }
             }
         }
 

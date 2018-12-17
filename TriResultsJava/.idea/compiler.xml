@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="TriResultsJava" target="8" />
+      <module name="TriResultsJava" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

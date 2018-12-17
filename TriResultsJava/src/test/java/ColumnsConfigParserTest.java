@@ -1,5 +1,4 @@
 import TriResultsJava.Column;
-import TriResultsJava.ColumnsConfigParser;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,8 +18,9 @@ public class ColumnsConfigParserTest {
 
     @BeforeEach
     void setUp() {
-        String cwd = new File(ColumnsConfigParserTest.class.getProtectionDomain().getCodeSource().getLocation().getPath()).toString();  // System.getProperty("user.dir");
-        Path p = Paths.get(cwd, "TriResultsJava", "tests", "column_config.xml");
+//        String cwd = new File(ColumnsConfigParserTest.class.getProtectionDomain().getCodeSource().getLocation().getPath()).toString();
+        String resourceDirectory = Paths.get("src","test","resources").toString();
+        Path p = Paths.get(resourceDirectory,"column_config.xml");
         filename =  p.toString();
 
         parser = new ColumnsConfigParser();
@@ -37,7 +37,7 @@ public class ColumnsConfigParserTest {
 
         try {
             columns = parser.parse(filename);
-        } catch(IOException e) {
+        } catch(IOException | BadConfigurationException e) {
             System.out.println(e.getMessage());
         }
 

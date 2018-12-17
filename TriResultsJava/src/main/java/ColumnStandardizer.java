@@ -14,11 +14,11 @@ public class ColumnStandardizer implements INameMapper {
         this._columnConfig = columnConfig;
     }
 
-    public final List<String> GetStandardColumnNames(List<String> columnNames) throws BadConfigurationException {
+    public final List<String> GetStandardColumnNames(List<String> columnNames) {
         return this.GetStandardColumnNames(columnNames, this._columnConfig);
     }
 
-    public final List<String> GetStandardColumnNames(List<String> columnNames, List<Column> columnConfig) throws BadConfigurationException {
+    public final List<String> GetStandardColumnNames(List<String> columnNames, List<Column> columnConfig) {
         ArrayList<String> results = new ArrayList<String>();
         Map<String,String> mapping = this.InvertColumnConfig(columnConfig);
         for (String columnName : columnNames) {
@@ -35,14 +35,14 @@ public class ColumnStandardizer implements INameMapper {
         return results;
     }
 
-    private final Map<String, String> InvertColumnConfig(List<Column> columnConfig) throws BadConfigurationException {
-        Map<String,String> mapping = new HashMap<String, String>();
+    private final Map<String, String> InvertColumnConfig(List<Column> columnConfig) {
+        Map<String,String> mapping = new HashMap<>();
         //  keys are all columns that can be mapped, including the standardized names
         for (Column col : columnConfig) {
             for (String alternativeName : col.AlternativeNames()) {
-                if (mapping.containsKey(alternativeName)) {
-                    throw new BadConfigurationException("Duplicate column name in configuration: {alternativeName}");
-                }
+//                if (mapping.containsKey(alternativeName)) {
+//                    throw new BadConfigurationException("Duplicate column name in configuration: {alternativeName}");
+//                }
 
                 mapping.put(alternativeName, col.getName());
             }
