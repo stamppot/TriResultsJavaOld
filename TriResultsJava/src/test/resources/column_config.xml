@@ -5,19 +5,27 @@
             <altname>Plts</altname>
             <altname>Pl</altname>
             <altname>Nr</altname>
+            <altname>Rank</altname>
         </mapfrom>
     </column>
     <column name="StartNr" order="2" >
         <mapfrom>
             <altname>StNr</altname>
             <altname>RaceNr</altname>
+            <altname>RaceNrs</altname>
             <altname>#Bib</altname>
+            <altname>Bib</altname>
+            <altname>StartNr</altname>
+            <altname>Startnr</altname>
         </mapfrom>
     </column>
     <column name="Naam" order="3">
         <mapfrom>
             <altname>Name</altname>
+            <altname>name</altname>
+            <altname>naam</altname>
             <altname>NAAM</altname>
+            <altname>Naam / Team</altname>
         </mapfrom>
     </column>
     <column name="Club" order="4">
@@ -37,11 +45,14 @@
             <altname>CatPts</altname>
             <altname>PltsCat</altname>
             <altname>#Cat</altname>
+            <altname>RankCat</altname>
         </mapfrom>
     </column>
     <column     name="Cat" order="6">
         <mapfrom>
             <altname>Categ</altname>
+            <altname>AgeGrp</altname>
+            <altname>AG</altname>
         </mapfrom>
     </column>
     <column     name="Swim" order="7">
@@ -63,6 +74,7 @@
             <altname>#Zwem</altname>
             <altname>#Z</altname>
             <altname>#Zw</altname>
+            <altname># Zw</altname>
             <altname>#Sw</altname>
             <altname>#S</altname>
         </mapfrom>
@@ -113,6 +125,7 @@
             <altname>#Fiets</altname>
             <altname>#F</altname>
             <altname>#Fie</altname>
+            <altname># Fie</altname>
             <altname>#Bk</altname>
             <altname>#B</altname>
         </mapfrom>
@@ -151,6 +164,7 @@
             <altname>#T2</altname>
             <altname>#W2</altname>
             <altname>PosWis2</altname>
+            <altname>T2Pos</altname>
         </mapfrom>
     </column>
     <column     name="PosAfterT2" order="20">
@@ -175,6 +189,7 @@
         <mapfrom>
             <altname>RunPos</altname>
             <altname>#Run</altname>
+            <altname># Lp</altname>
             <altname>PltsLoop</altname>
             <altname>PltsRun</altname>
             <altname>#Loop</altname>

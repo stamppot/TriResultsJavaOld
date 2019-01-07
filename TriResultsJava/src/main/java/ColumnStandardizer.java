@@ -27,6 +27,7 @@ public class ColumnStandardizer implements INameMapper {
                 results.add(standardizedName);
             }
             else {
+                System.out.println("Column name: '" + columnName + "' not supported");
                 results.add(columnName);
             }
 

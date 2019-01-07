@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94307f9f-dfee-4593-8c8a-a446660b6447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConfigHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ICsvHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IFilterFunc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InvalidCsvException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyCsvHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ResultRow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ColumnStandardizerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/column_config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CsvColumnValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ICsvValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ColumnStandardizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ColumnStandardizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ColumnsConfigParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ColumnsConfigParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/INameMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/INameMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ColumnsConfigParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ColumnsConfigParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/column_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/column_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ICsvHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ICsvHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyCsvHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyCsvHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/column_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/column_config.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,10 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ColumnStandardizerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ColumnsConfigParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="435">
+              <caret line="29" column="21" selection-end-line="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,11 +35,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ConfigHelper.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="102" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
+            <state relative-caret-position="524">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1768#1769#0" expanded="true" />
+                <element signature="e#1812#1813#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyCsvHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,24 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="151" selection-start-line="151" selection-end-line="151" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,26 +74,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MyCsvHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CsvColumnValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="42" />
+            <state relative-caret-position="248">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BadConfigurationException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ICsvValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="36" />
-              <folding>
-                <element signature="e#113#114#0" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -111,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ColumnStandardizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="28">
               <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -124,10 +113,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/INameMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Column.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+            <state relative-caret-position="450">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/column_config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -135,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ColumnsConfigParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="22" column="107" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
+            <state relative-caret-position="193">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2633#2649#0" expanded="true" />
@@ -150,15 +155,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Hello</find>
       <find>string</find>
+      <find>Scann</find>
+      <find>Hello</find>
+      <find>Naam not</find>
+      <find>FilterOnN</find>
+      <find>StandardizeResultsCsv</find>
+      <find>Is file missing header?</find>
+      <find>FilterOnName(</find>
+      <find>First element invalid</find>
+      <find>Race</find>
+      <find>RankCat</find>
+      <find>Nation</find>
+      <find>.listF</find>
+      <find>.isValid</find>
+      <find>Naam not found</find>
+      <find>laceHeaders: Colum</find>
     </findStrings>
     <replaceStrings>
       <replace>String</replace>
@@ -181,22 +200,27 @@
         <option value="$PROJECT_DIR$/src/main/java/IFilterFunc.java" />
         <option value="$PROJECT_DIR$/src/main/java/InvalidCsvException.java" />
         <option value="$PROJECT_DIR$/src/main/java/INameMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ColumnStandardizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ColumnsConfigParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ICsvHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MyCsvHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ResultRow.java" />
         <option value="$PROJECT_DIR$/src/test/java/ColumnStandardizerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConfigHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ColumnsConfigParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ICsvHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ColumnValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ICsvValidator.java" />
         <option value="$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CsvColumnValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ColumnStandardizer.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/column_config.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyCsvHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2533" />
-    <option name="y" value="150" />
+    <option name="x" value="-1379" />
+    <option name="y" value="141" />
     <option name="width" value="1362" />
     <option name="height" value="1209" />
   </component>
@@ -250,6 +274,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TriResultsJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TriResultsJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,17 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StandardizeResultsTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="TriResultsJava" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StandardizeAndFilterCsvFileTest.ReadAllTest">
     <configuration name="Test" type="ArquillianJUnit" factoryName="">
       <module name="TriResultsJava" />
       <option name="arquillianRunConfiguration">
@@ -342,10 +363,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColumnsConfigParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StandardizeAndFilterCsvFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TriResultsJava" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ColumnsConfigParserTest" />
+      <option name="MAIN_CLASS_NAME" value="StandardizeAndFilterCsvFileTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TriResultsJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StandardizeAndFilterCsvFileTest" />
+      <option name="METHOD_NAME" value="ReadAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TriResultsJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StandardizeAndFilterCsvFileTest" />
+      <option name="METHOD_NAME" value="ReadAllTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -359,18 +400,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Arquillian JUnit.Test" />
-      <item itemvalue="JUnit.ColumnsConfigParserTest" />
       <item itemvalue="JUnit.ColumnStandardizerTest" />
       <item itemvalue="JUnit.StandardizeResultsTest" />
+      <item itemvalue="JUnit.StandardizeAndFilterCsvFileTest.ReadAllTest" />
+      <item itemvalue="JUnit.StandardizeAndFilterCsvFileTest" />
+      <item itemvalue="JUnit.StandardizeAndFilterCsvFileTest.ReadAllTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StandardizeAndFilterCsvFileTest.ReadAllTest" />
+        <item itemvalue="JUnit.StandardizeAndFilterCsvFileTest.ReadAllTest (1)" />
+        <item itemvalue="JUnit.StandardizeAndFilterCsvFileTest" />
         <item itemvalue="JUnit.StandardizeResultsTest" />
         <item itemvalue="JUnit.ColumnStandardizerTest" />
-        <item itemvalue="JUnit.ColumnsConfigParserTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -381,44 +424,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544878309197</updated>
-      <workItem from="1544878315309" duration="29697000" />
+      <workItem from="1544878315309" duration="56867000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test - 2018.12.16 at 15h 34m 49s.xml">
-      <configuration name="Test" configurationId="ArquillianJUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 12m 50s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test - 2018.12.16 at 15h 35m 09s.xml">
-      <configuration name="Test" configurationId="ArquillianJUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 14m 19s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnsConfigParserTest - 2018.12.17 at 16h 51m 37s.xml">
-      <configuration name="ColumnsConfigParserTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 15m 44s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnsConfigParserTest - 2018.12.17 at 16h 52m 24s.xml">
-      <configuration name="ColumnsConfigParserTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 16m 38s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnStandardizerTest - 2018.12.17 at 16h 53m 04s.xml">
-      <configuration name="ColumnStandardizerTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 19m 45s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnStandardizerTest - 2018.12.17 at 16h 54m 30s.xml">
-      <configuration name="ColumnStandardizerTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 20m 20s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnStandardizerTest - 2018.12.17 at 17h 22m 07s.xml">
-      <configuration name="ColumnStandardizerTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest_(1) - 2019.01.07 at 20h 23m 42s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnStandardizerTest - 2018.12.17 at 17h 22m 45s.xml">
-      <configuration name="ColumnStandardizerTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 29m 42s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnStandardizerTest - 2018.12.17 at 17h 23m 29s.xml">
-      <configuration name="ColumnStandardizerTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 34m 11s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ColumnStandardizerTest - 2018.12.17 at 17h 24m 14s.xml">
-      <configuration name="ColumnStandardizerTest" configurationId="JUnit" />
+    <history-entry file="StandardizeAndFilterCsvFileTest_ReadAllTest - 2019.01.07 at 20h 37m 45s.xml">
+      <configuration name="StandardizeAndFilterCsvFileTest.ReadAllTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29697000" />
+    <option name="totallyTimeSpent" value="56867000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -430,14 +473,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2533" y="150" width="1362" height="1209" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1379" y="141" width="1362" height="1209" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Designer" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25681818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25681818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Dependency Viewer" weight="0.3299817" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Messages" weight="0.32723948" />
@@ -445,9 +488,9 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32815355" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32723948" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32723948" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34095064" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34095064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299817" />
@@ -504,13 +547,96 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java</url>
-          <line>55</line>
+          <url>file://$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java</url>
+          <line>36</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="filename == &quot;2015-jun-6-nijkerk-TijdTot.csv&quot;" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MyCsvHelper.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="columnName == &quot;Naam&quot;" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/ColumnStandardizer.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>columnName == &quot;Naam&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>csvLines.get(0).get(0) == &quot;Rank&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>j == 18</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>filename == &quot;2015-jun-6-nijkerk-TijdTot.csv&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>columnValues.size() == 18</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>name == &quot;Hielke Nobel&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i == 91</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TriResultsJava.iml">
@@ -530,23 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RaceReaderCsv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Column.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/XMLUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="852">
@@ -562,20 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="246" selection-start-line="246" selection-end-line="246" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/column_config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -628,51 +723,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ColumnsConfigParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="22" column="107" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2633#2649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ColumnStandardizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#856#864#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ICsvHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ResultRow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="11" lean-forward="true" selection-start-column="2" selection-end-line="312" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyCsvHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,10 +737,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RaceReaderCsv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ColumnStandardizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="108">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -695,15 +756,124 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ColumnsConfigParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="435">
+          <caret line="29" column="21" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ColumnsConfigParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2633#2649#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ConfigHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="102" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/leden2018.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ICsvHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="248" selection-start-line="248" selection-end-line="248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/column_config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CsvColumnValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ColumnStandardizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#856#864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ICsvValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyCsvHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -712,24 +882,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StandardizeResultsCsv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="345">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StandardizeResultsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/StandardizeAndFilterCsvFileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="524">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
           </folding>
         </state>
       </provider>
